@@ -20,6 +20,11 @@ const { description, title } = Astro.props
     <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <style>
+      @tailwind base;
+@tailwind components;
+@tailwind utilities;
+    </style>
     <ViewTransitions />
   </head>
 
