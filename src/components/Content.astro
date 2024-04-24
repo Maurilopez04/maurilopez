@@ -1,0 +1,30 @@
+---
+import Info from "./Info.astro"
+import CardProyect from "./CardProyect.astro"
+---
+<div class="my-4 flex flex-col 2xl:flex-row space-y-4 2xl:space-y-0 2xl:space-x-4">
+    <Info />
+    <div class="flex flex-col w-full 2xl:w-2/3">
+        <div class="flex-1 bg-white rounded-lg shadow-xl p-8 dark:bg-gray-800" id="sobre-mi">
+            <h4 class="text-xl text-gray-900 font-bold dark:text-white">Sobre Mi</h4>
+            <p class="mt-2 text-gray-700 dark:text-gray-400">Desarrollador FrontEnd Jr. con conocimientos básicos en BackEnd. Especializado en la 
+                creación de sitios y aplicaciones web, así como en el diseño gráfico tanto para mis 
+                páginas como para redes sociales. Siempre estoy en búsqueda de aprender nuevas 
+                tecnologías y herramientas para mejorar mis capacidades en desarrollo y diseño.</p>
+        </div>
+        <div class="flex-1 bg-white rounded-lg shadow-xl mt-4 p-8 dark:bg-gray-800" id="proyectos">
+            <h4 class="text-xl text-gray-900 font-bold dark:text-white">Proyectos</h4>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
+<CardProyect title="HL TUNING" description="Eccomerce en PHP,Mysql, Javascript y Bootstrap" img="Machltuning.png" url="https://www.hltuning.com/"/>
+<CardProyect title="Bytech Py" description="Web en HTML, CSS, Javascript y Bootstrap" img="bytech.png" url="https://bytechpy.github.io/"/>
+<CardProyect title="BigCSS" description="Web en HTML y CSS" img="/bigcss.png" url="https://maurilopez04.github.io/bigCSS/"/>
+<CardProyect title="Taller March" description="Web en HTML, CSS y Bootstrap" img="/tallermarch.png" url="https://maurilopez04.github.io/TallerMarch/"/>
+</div>
+
+            <div class="mt-4">
+                <canvas id="verticalBarChart" style="display: block; box-sizing: border-box; height: 414px; width: 828px;" width="1656" height="828"></canvas>
+            </div>
+        </div>
+    </div>
+</div>

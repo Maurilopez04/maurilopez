@@ -1,0 +1,13 @@
+---
+// CardIcon.astro
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const iconName = title.toLowerCase().replace(/\s+/g, ''); // Format the title to match icon filenames
+---
+
+<div class="flex flex-col items-center m-1 ">
+    <img src={`https://simpleicons.org/icons/${iconName}.svg`} alt={`${title} icon`} class="h-12 w-12 mt-2 dark:filter dark:invert">
+</div>

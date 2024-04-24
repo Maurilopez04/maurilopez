@@ -1,0 +1,49 @@
+---
+// main.astro file or relevant Astro component file
+import CardIcon from "./CardIcon.astro";
+---
+
+<div class="bg-white rounded-lg shadow-xl p-8 dark:bg-gray-800">
+    <div class="flex items-center justify-between">
+        <h4 class="text-xl text-gray-900 font-bold dark:text-white">Tecnologías Web</h4>
+       
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 p-5 ">
+        <CardIcon title="HTML5"/>
+        <CardIcon title="CSS3"/>
+        <CardIcon title="JavaScript"/>
+        <CardIcon title="React"/>
+        <CardIcon title="Astro"/>
+        <CardIcon title="TailwindCSS"/>
+        <CardIcon title="PHP"/>
+        <CardIcon title="MySQL"/>
+        <CardIcon title="Bootstrap"/>
+        <CardIcon title="Sass"/>
+        <CardIcon title="Git"/>
+        <CardIcon title="GitHub"/>
+        <CardIcon title="WordPress"/>
+        <CardIcon title="WooCommerce"/>
+        <CardIcon title="PrestaShop"/>
+        <CardIcon title="Wix"/>
+
+    </div>
+</div>
+
+<!-- Sección para Diseño y Multimedia -->
+<div class="bg-white rounded-lg shadow-xl p-8 mt-4 dark:bg-gray-800">
+    <div class="flex items-center justify-between mb-8">
+        <h4 class="text-xl text-gray-900 font-bold dark:text-white">Diseño y Multimedia</h4>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+        <CardIcon title="Canva"/>
+        <CardIcon title="AdobePhotoshop"/>
+        <CardIcon title="CorelDRAW"/>
+        <CardIcon title="Inkscape"/>
+        <CardIcon title="Blender"/>
+        <CardIcon title="wondersharefilmora"/>
+        <CardIcon title="OBSStudio"/>
+        <div class="flex flex-col items-center m-1 rounded-lg shadow-sm">
+            <img src={"/capcut-svgrepo-com.svg"} alt={`capcut icon`} class="h-12 w-12 mt-2 dark:filter dark:invert">
+        </div>
+    </div>
+</div>
